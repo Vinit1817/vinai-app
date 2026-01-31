@@ -1,0 +1,11 @@
+ScreenTime,NightUsage,AppSwitchFreq,StudyDistraction,AddictionLevel
+2,0,5,1,Low
+3,0,7,1,Low
+4,1,10,2,Moderate
+5,1,12,2,Moderate
+6,1,18,3,High
+7,1,20,4,High
+8,1,25,5,High
+1,0,3,0,Low
+3,0,6,1,Low
+5,1,14,2,Moderate

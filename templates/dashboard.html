@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Analytics Dashboard</h3>
+
+<div class="row">
+  <div class="col-md-6">
+    <canvas id="riskChart"></canvas>
+  </div>
+</div>
+
+<script>
+var ctx = document.getElementById('riskChart');
+new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ['High', 'Moderate', 'Low'],
+        datasets: [{
+            data: [{{ high }}, {{ moderate }}, {{ low }}],
+            backgroundColor: ['#dc3545', '#ffc107', '#28a745']
+        }]
+    }
+});
+</script>
+
+{% endblock %}
